@@ -14,12 +14,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapGet("/", () => Results.Ok(new
+//Tests
+/*app.MapGet("/", () => Results.Ok(new
 {
     application = "LOGINventoryHardware",
     status = "API läuft",
     example = "/api/hardware?invnr=ASSET-3"
-}));
+}));*/
 //https://localhost:7024/api/hardware?invnr=ASSET-3
 
 app.Run();
